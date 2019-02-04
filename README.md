@@ -1,6 +1,7 @@
-Amadeus API Key: 7nNFOqhxyqppgPq9eYgDvmhNjnkl9qW6
-Amadeus API Secret: bd5MZ2tNEAVyQYJA
+To run this as a web service open a command window, change to the root directory of the project and run:
 
-Base URL: test.api.amadeus.com
+   mvn spring-boot:run
+   
+Point your browser to http://localhost:8080/getFlights
 
-https://developers.amadeus.com/self-service/category/203/api-doc/3/api-docs-and-example/10001
+
