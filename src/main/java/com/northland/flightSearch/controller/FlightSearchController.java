@@ -192,7 +192,7 @@ public class FlightSearchController {
      * @param cheapestThreeFlights - A List of price Strings
      * @return String - Formatted HTML output for a response
      */
-    public String createCheapestThreeFlightsResponse(List<String> cheapestThreeFlightsList, String origin) {
+    private String createCheapestThreeFlightsResponse(List<String> cheapestThreeFlightsList, String origin) {
     	
     	if ((cheapestThreeFlightsList == null) || (cheapestThreeFlightsList.size() == 0)) {
     		return "There are no flights that use the origin code \"" + origin + "\"";

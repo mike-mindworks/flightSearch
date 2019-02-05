@@ -18,5 +18,12 @@ If this was an actual production application I would cast the results being retu
 by the Amadeus web service into customized Java objects that match the responses using
 an ObjectMapper so more data could be displayed.
 
-Given more time I'd create a front end in Angular as well that makes the call to the
-web service and uses binding to display the responses.
+Given more time I'd create a front end in Angular as well that prompts you for the origin airport code
+and makes the call to the web service that use binding to display the responses.
+
+I should also point out that I'd ordinarily add a lot more unit tests to a production application
+but I wanted to at least demonstrate how to test private methods that use autowired Spring classes. 
+This makes the test more of a system test than a unit test but I'm trying to demonstrate that I always
+write unit tests but didn't want to go to the extent of mocking the Amadeus service.
+
+There should be tests for each of the methods in the FlightSearchController class.
