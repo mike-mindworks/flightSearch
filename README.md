@@ -27,3 +27,9 @@ This makes the test more of a system test than a unit test but I'm trying to dem
 write unit tests but didn't want to go to the extent of mocking the Amadeus service.
 
 There should be tests for each of the methods in the FlightSearchController class.
+
+There is also a refactored version of the FlightSearchController called RefactoredFlightSearchController that accesses the Amadeus web service as a separate FlightSearchService rather than a simple RESTful API call. Java 8 enhancements were added as well (converted loops to streams)
+
+To test the refactored version point your browser to this URL:
+http://localhost:8081/refactored/getCheapestThreeFlights?originCode=MAD
+
